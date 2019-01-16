@@ -1,10 +1,14 @@
+// Jenkinsfile
+// ----------------------------------------------------------------------
+// This is as simple as it gets with declarative pipeline
+// ----------------------------------------------------------------------
 pipeline {
-  agent any
-  stages {
-    stage('test1') {
-      steps {
-        echo 'THIS IS A TEST'
+   agent any
+   stages {
+      stage('Say Hello') {
+         steps {
+            echo 'Hello World!'
+         }
       }
-    }
-  }
+   }
 }
